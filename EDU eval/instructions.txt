@@ -1,0 +1,28 @@
+Mit yes oder no annotieren:
+Ist mind. ein Meinungstriplet, d.h. mind. ein Attribute-Entity-Sentiment-Trio, verteilt über mehr als eine EDU im Satz?
+
+Bei folgenden Szenarien weder yes noch no annotieren:
+- Aus dem Satz geht weder direkt noch indirekt hervor zu welcher Eniity er zugeordnet werden kann (Entity fehlt).
+- Der Satz enthält keine Meinung zu einem der Enitites/Attributes (Sentiment fehlt) zB kommt es häufig vor, dass lediglich Fakten über organic/conventional food genannt werden.
+
+Entity:
+==========
+Organic
+Conventional
+GMO (genetically modified organism)
+Local
+
+Attribute:
+==========
+Price
+Quality-Taste-Nutrients-Appearance
+Health-Safety
+Environment-Animals-Productivity
+Trust-Origin
+General
+
+Sentiment:
+==========
+Positive
+Negative
+Neutral

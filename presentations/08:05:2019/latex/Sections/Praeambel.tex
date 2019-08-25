@@ -1,0 +1,65 @@
+\documentclass[t]{beamer}
+\usepackage[
+    orientation=landscape,
+    size=custom,
+    width=25.4,
+    height=19.05,
+    scale=0.63 % erzeugt 16pt Schriftgröße
+]{beamerposter}
+
+\newcommand{\PraesentationSchriftgroesseSehrGross}{\fontsize{30}{45}}
+\newcommand{\PraesentationSchriftgroesseGross}{\fontsize{22}{33}}
+\newcommand{\PraesentationSchriftgroesseNormal}{\fontsize{16}{29}}
+\newcommand{\PraesentationSchriftgroesseKlein}{\fontsize{12}{18}}
+\newcommand{\PraesentationSchriftgroesseDreizeiler}{\fontsize{7}{10}}
+\newcommand{\PraesentationSchriftgroesseAufzaehlungszeichen}{\fontsize{10}{8}}
+
+\newcommand{\PraesentationAbstandAbsatz}{22.1pt}
+\newcommand{\PraesentationPositionKorrekturOben}{0cm}
+\newcommand{\PraesentationBeispieleSchriftgroessen}{30 | 22 | 16 | 12}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % Zeichensatzkodierung
+
+\usepackage{calc} % Berechnungen
+
+\usepackage[ngerman]{babel} % Deutsche Lokalisierung
+\usepackage{graphicx} % Grafiken
+\usepackage[export]{adjustbox}
+\usepackage[absolute, overlay]{textpos} % Positionierung
+
+% Silbentrennung:
+\usepackage{hyphenat}
+%\tolerance 2414
+%\hbadness 2414
+%\emergencystretch 1.5em
+%\hfuzz 0.3pt
+%\widowpenalty=10000     % Hurenkinder
+%\clubpenalty=10000      % Schusterjungen
+%\vfuzz \hfuzz
+
+% Euro-Symbol:
+\usepackage[gen]{eurosym}
+\DeclareUnicodeCharacter{20AC}{\euro{}}
+
+% Schriftart Helvetica:
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{mathptmx} % skalierbare Formelschriften
+
+\usepackage{tabularx}
+
+\usepackage{multicol} % mehrspaltiger Text
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes, shapes.multipart, trees, positioning,
+	backgrounds, fit, matrix}
+
+% Diagramme:
+\usepackage{pgfplots}
+\pgfplotsset{compat=default}
+
+% Erweiterbare Fusszeile:
+\newcommand{\PraesentationFusszeileZusatz}{}
